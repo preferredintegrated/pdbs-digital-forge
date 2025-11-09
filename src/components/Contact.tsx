@@ -1,9 +1,18 @@
 import { MapPin, Phone, Mail, Globe, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import backgroundTexture from "@/assets/background-texture.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-[hsl(251,100%,10%)] text-primary-foreground">
+    <section 
+      id="contact" 
+      className="py-24 text-primary-foreground"
+      style={{
+        backgroundImage: `url(${backgroundTexture})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">

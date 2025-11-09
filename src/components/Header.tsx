@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
+import backgroundTexture from "@/assets/background-texture.png";
 
 const menuItems = [
   { label: "Home", href: "#home" },
@@ -34,9 +35,14 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[hsl(251,100%,10%)] shadow-lg ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-lg ${
         isScrolled ? "shadow-xl" : "shadow-md"
       }`}
+      style={{
+        backgroundImage: `url(${backgroundTexture})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -90,7 +96,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 bg-[hsl(251,100%,10%)] border-t border-white/10">
+          <div 
+            className="md:hidden py-4 border-t border-white/10"
+            style={{
+              backgroundImage: `url(${backgroundTexture})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
             <nav className="flex flex-col gap-4">
               {menuItems.map((item) => (
                 <a
