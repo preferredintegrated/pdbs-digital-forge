@@ -34,10 +34,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[hsl(251,100%,10%)] shadow-lg ${
+        isScrolled ? "shadow-xl" : "shadow-md"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -64,9 +62,7 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className={`font-medium transition-colors hover:text-primary ${
-                  isScrolled ? "text-foreground" : "text-white"
-                }`}
+                className={`font-medium transition-colors hover:text-gradient-pink text-white`}
               >
                 {item.label}
               </a>
@@ -85,16 +81,16 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={`h-6 w-6 ${isScrolled ? "text-foreground" : "text-white"}`} />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className={`h-6 w-6 ${isScrolled ? "text-foreground" : "text-white"}`} />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 bg-background/95 backdrop-blur-md border-t border-border">
+          <div className="md:hidden py-4 bg-[hsl(251,100%,10%)] border-t border-white/10">
             <nav className="flex flex-col gap-4">
               {menuItems.map((item) => (
                 <a
@@ -104,7 +100,7 @@ const Header = () => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="font-medium text-foreground hover:text-primary transition-colors px-2 py-2"
+                  className="font-medium text-white hover:text-gradient-pink transition-colors px-2 py-2"
                 >
                   {item.label}
                 </a>
