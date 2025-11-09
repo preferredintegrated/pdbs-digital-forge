@@ -2,7 +2,7 @@ import { Target, Rocket, Users } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
