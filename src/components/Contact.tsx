@@ -108,9 +108,6 @@ const Contact = () => {
                 <p className="text-light-blue text-sm">
                   © 2025 Preferred Digital Business Services
                 </p>
-                <p className="text-accent-blue text-xs mt-1">
-                  Developed by Oigon Media
-                </p>
               </div>
             </div>
           </div>
