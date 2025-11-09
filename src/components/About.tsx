@@ -19,8 +19,8 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center p-6">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 bg-gradient-to-br from-gradient-pink to-gradient-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Our Mission
@@ -32,8 +32,8 @@ const About = () => {
             </div>
 
             <div className="text-center p-6">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Rocket className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 bg-gradient-to-br from-gradient-purple to-gradient-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                <Rocket className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Our Vision
@@ -45,8 +45,8 @@ const About = () => {
             </div>
 
             <div className="text-center p-6">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 bg-gradient-to-br from-gradient-blue to-gradient-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Our Approach

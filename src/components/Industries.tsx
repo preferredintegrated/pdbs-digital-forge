@@ -28,10 +28,10 @@ const Industries = () => {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center justify-center p-8 bg-card rounded-2xl border-2 border-border hover:border-accent-blue transition-all duration-300 hover:shadow-lg cursor-pointer"
+              className="group flex flex-col items-center justify-center p-8 bg-card rounded-2xl border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-lg cursor-pointer"
             >
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-blue transition-colors">
-                <industry.icon className="h-8 w-8 text-primary group-hover:text-deep-blue transition-colors" />
+              <div className="w-16 h-16 bg-gradient-to-br from-gradient-pink via-gradient-purple to-gradient-blue rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <industry.icon className="h-8 w-8 text-white transition-colors" />
               </div>
               <p className="text-foreground font-semibold text-center">
                 {industry.name}

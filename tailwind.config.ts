@@ -22,10 +22,10 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "gradient-pink": "hsl(var(--gradient-pink))",
+        "gradient-purple": "hsl(var(--gradient-purple))",
+        "gradient-blue": "hsl(var(--gradient-blue))",
         "deep-blue": "hsl(var(--deep-blue))",
-        "light-blue": "hsl(var(--light-blue))",
-        "accent-blue": "hsl(var(--accent-blue))",
-        "coral-red": "hsl(var(--coral-red))",
         "light-grey": "hsl(var(--light-grey))",
         primary: {
           DEFAULT: "hsl(var(--primary))",

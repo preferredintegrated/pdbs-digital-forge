@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* PDBS Brand Colors - Primary */
+    /* PDBS Brand Colors - Pink to Blue Gradient Theme */
     --background: 0 0% 100%;
-    --foreground: 251 100% 15%;
+    --foreground: 251 60% 20%;
     
+    --gradient-pink: 0 100% 71%;
+    --gradient-purple: 280 60% 65%;
+    --gradient-blue: 217 100% 75%;
     --deep-blue: 251 100% 15%;
-    --light-blue: 229 100% 91%;
-    --accent-blue: 217 100% 80%;
-    --coral-red: 0 100% 71%;
-    --light-grey: 0 0% 94%;
+    --light-grey: 0 0% 96%;
 
     --card: 0 0% 100%;
-    --card-foreground: 251 100% 15%;
+    --card-foreground: 251 60% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 251 100% 15%;
+    --popover-foreground: 251 60% 20%;
 
-    --primary: 251 100% 15%;
+    --primary: 280 60% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 229 100% 91%;
-    --secondary-foreground: 251 100% 15%;
+    --secondary: 217 100% 95%;
+    --secondary-foreground: 251 60% 20%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 251 50% 35%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 251 30% 45%;
 
-    --accent: 217 100% 80%;
-    --accent-foreground: 251 100% 15%;
+    --accent: 217 100% 75%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 100% 71%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 229 100% 91%;
-    --input: 229 100% 91%;
-    --ring: 217 100% 80%;
+    --border: 280 30% 92%;
+    --input: 280 30% 92%;
+    --ring: 280 60% 65%;
 
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(251, 100%, 15%) 0%, hsl(251, 80%, 25%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(217, 100%, 80%) 0%, hsl(229, 100%, 91%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0, 100%, 71%) 0%, hsl(280, 60%, 65%) 50%, hsl(217, 100%, 75%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(0, 90%, 75%) 0%, hsl(280, 60%, 70%) 100%);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,39 +77,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 251 100% 8%;
-    --foreground: 229 100% 91%;
+    --background: 251 40% 10%;
+    --foreground: 280 30% 90%;
     
+    --gradient-pink: 0 100% 71%;
+    --gradient-purple: 280 60% 65%;
+    --gradient-blue: 217 100% 75%;
     --deep-blue: 251 100% 15%;
-    --light-blue: 229 100% 91%;
-    --accent-blue: 217 100% 80%;
-    --coral-red: 0 100% 71%;
     --light-grey: 0 0% 20%;
 
-    --card: 251 80% 12%;
-    --card-foreground: 229 100% 91%;
+    --card: 251 30% 15%;
+    --card-foreground: 280 30% 90%;
 
-    --popover: 251 80% 12%;
-    --popover-foreground: 229 100% 91%;
+    --popover: 251 30% 15%;
+    --popover-foreground: 280 30% 90%;
 
-    --primary: 229 100% 91%;
-    --primary-foreground: 251 100% 15%;
+    --primary: 280 60% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 251 50% 20%;
-    --secondary-foreground: 229 100% 91%;
+    --secondary: 251 30% 20%;
+    --secondary-foreground: 280 30% 90%;
 
-    --muted: 251 50% 20%;
-    --muted-foreground: 229 50% 70%;
+    --muted: 251 30% 20%;
+    --muted-foreground: 280 20% 70%;
 
-    --accent: 217 100% 80%;
-    --accent-foreground: 251 100% 15%;
+    --accent: 217 100% 75%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 100% 71%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 251 50% 20%;
-    --input: 251 50% 20%;
-    --ring: 217 100% 80%;
+    --border: 251 30% 20%;
+    --input: 251 30% 20%;
+    --ring: 280 60% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
