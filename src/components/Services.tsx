@@ -1,5 +1,8 @@
 import { Code, Palette, TestTube, Link2, Headphones } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import technologyNetwork from "@/assets/technology-network.jpg";
+import cloudServices from "@/assets/cloud-services.jpg";
+import development from "@/assets/development.jpg";
 
 const services = [
   {
@@ -40,6 +43,31 @@ const Services = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive digital solutions to accelerate your business growth
           </p>
+        </div>
+
+        {/* Technology Showcase Images */}
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src={technologyNetwork} 
+              alt="Digital technology network infrastructure"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src={cloudServices} 
+              alt="Cloud computing and IT services"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src={development} 
+              alt="Software development workspace"
+              className="w-full h-64 object-cover"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

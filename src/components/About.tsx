@@ -1,10 +1,11 @@
 import { Target, Rocket, Users } from "lucide-react";
+import teamImage from "@/assets/team-collaboration.jpg";
 
 const About = () => {
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               About PDBS
@@ -15,6 +16,15 @@ const About = () => {
               digital solutions to enterprises, startups, and software vendors
               worldwide.
             </p>
+          </div>
+
+          {/* Team Image */}
+          <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src={teamImage} 
+              alt="Professional IT team collaborating on software development"
+              className="w-full h-auto object-cover"
+            />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
