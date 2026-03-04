@@ -195,6 +195,48 @@ const jobListings: JobListing[] = [
       instructions: "Send your CV.",
     },
   },
+  {
+    id: 5,
+    title: "Business Analyst Intern",
+    location: "Remote",
+    type: "Internship",
+    department: "Business Analysis",
+    duration: "3 – 6 months",
+    description:
+      "We are seeking a Business Analyst Intern who is eager to learn how technology solutions support business goals. This role is ideal for students or recent graduates looking to gain hands-on experience in business analysis, requirements gathering, and stakeholder collaboration.",
+    responsibilities: [
+      "Assist in gathering and documenting business requirements",
+      "Support process analysis and identify improvement opportunities",
+      "Help prepare documentation such as user stories, process flows, and reports",
+      "Participate in stakeholder meetings and project discussions",
+      "Support testing and validation of solutions against business needs",
+      "Collaborate with product, development, and support teams",
+    ],
+    requirements: [
+      "Currently studying or recently graduated in Business Administration, Information Systems, Computer Science, or a related field",
+      "Basic understanding of business analysis concepts",
+      "Strong communication and documentation skills",
+      "Analytical mindset with attention to detail",
+      "Familiarity with tools like Excel, Google Docs, or similar",
+      "Willingness to learn and take initiative",
+    ],
+    niceToHave: [
+      "Knowledge of Agile or Scrum methodology",
+      "Basic understanding of software development lifecycle (SDLC)",
+      "Experience with tools like Jira, Confluence, or similar",
+    ],
+    benefits: [
+      "Hands-on experience in real-world business analysis",
+      "Mentorship from experienced professionals",
+      "Exposure to live projects and stakeholder management",
+      "Opportunity for future full-time employment based on performance",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Application – Business Analyst Intern",
+      instructions: "Send your CV and a brief cover note explaining why you're interested in a Business Analyst internship.",
+    },
+  },
 ];
 
 const Careers = () => {
