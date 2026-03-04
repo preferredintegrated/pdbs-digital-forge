@@ -2,12 +2,22 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { MapPin, Clock, Briefcase, ArrowLeft, Mail, GraduationCap, CheckCircle2, Star, ChevronDown, Search } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  Briefcase,
+  ArrowLeft,
+  Mail,
+  GraduationCap,
+  CheckCircle2,
+  Star,
+  ChevronDown,
+  Search,
+} from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import backgroundTexture from "@/assets/background-texture.png";
-
 
 interface JobListing {
   id: number;
@@ -33,7 +43,7 @@ const jobListings: JobListing[] = [
     id: 1,
     title: "Software Tester / QA Intern",
     location: "Remote",
-    type: "Internship (Unpaid)",
+    type: "Internship",
     department: "Quality Assurance",
     duration: "3 – 6 months",
     description:
@@ -64,8 +74,7 @@ const jobListings: JobListing[] = [
     howToApply: {
       email: "recruitment@preferreddigitalbusiness.com",
       subjectLine: "Application – Software Tester/QA Intern",
-      instructions:
-        "Send your CV and a brief note on why you're interested in this internship.",
+      instructions: "Send your CV and a brief note on why you're interested in this internship.",
     },
   },
   {
@@ -238,7 +247,8 @@ const jobListings: JobListing[] = [
     howToApply: {
       email: "recruitment@preferreddigitalbusiness.com",
       subjectLine: "Application – Business Analyst Intern",
-      instructions: "Send your CV and a brief cover note explaining why you're interested in a Business Analyst internship.",
+      instructions:
+        "Send your CV and a brief cover note explaining why you're interested in a Business Analyst internship.",
     },
   },
   {
@@ -469,11 +479,12 @@ const JobCard = ({ job }: { job: JobListing }) => {
                 <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                   <Mail className="h-4 w-4 text-accent" /> How to Apply
                 </h4>
-                <p className="text-muted-foreground text-sm mb-3">
-                  {job.howToApply.instructions}
-                </p>
+                <p className="text-muted-foreground text-sm mb-3">{job.howToApply.instructions}</p>
                 <p className="text-sm text-muted-foreground mb-1">
-                  Email: <a href={`mailto:${job.howToApply.email}`} className="font-medium text-foreground hover:underline">{job.howToApply.email}</a>
+                  Email:{" "}
+                  <a href={`mailto:${job.howToApply.email}`} className="font-medium text-foreground hover:underline">
+                    {job.howToApply.email}
+                  </a>
                 </p>
                 <p className="text-sm text-muted-foreground mb-4">
                   Subject line: <span className="font-medium text-foreground">"{job.howToApply.subjectLine}"</span>
@@ -535,11 +546,10 @@ const Careers = () => {
           >
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
           </Button>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
-            Join Our Team
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Join Our Team</h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            We're looking for talented people who are passionate about technology and want to make an impact. Explore our open positions below.
+            We're looking for talented people who are passionate about technology and want to make an impact. Explore
+            our open positions below.
           </p>
         </div>
       </section>
@@ -559,7 +569,6 @@ const Careers = () => {
           </p>
         </div>
       </section>
-
 
       {/* Filters */}
       <section className="pt-12 pb-4">
@@ -593,11 +602,7 @@ const Careers = () => {
             ))}
           </div>
           <div className="flex flex-wrap gap-2">
-            <Button
-              size="sm"
-              variant={!selectedType ? "default" : "outline"}
-              onClick={() => setSelectedType(null)}
-            >
+            <Button size="sm" variant={!selectedType ? "default" : "outline"} onClick={() => setSelectedType(null)}>
               All Types
             </Button>
             {types.map((type) => (
