@@ -6,6 +6,7 @@ import { MapPin, Clock, Briefcase, ArrowLeft, Mail, GraduationCap, CheckCircle2,
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import backgroundTexture from "@/assets/background-texture.png";
+import careersBanner from "@/assets/careers-banner.jpg";
 
 interface JobListing {
   id: number;
@@ -521,6 +522,15 @@ const Careers = () => {
             We're looking for talented people who are passionate about technology and want to make an impact. Explore our open positions below.
           </p>
         </div>
+      </section>
+
+      {/* Banner */}
+      <section className="w-full">
+        <img
+          src={careersBanner}
+          alt="Build Fully Integrated Software Solutions For Your Business - Preferred Digital Business Solutions"
+          className="w-full h-auto object-cover"
+        />
       </section>
 
       {/* Job Listings */}
