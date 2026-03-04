@@ -545,14 +545,14 @@ const Careers = () => {
       </section>
 
       {/* Recruitment Email Banner */}
-      <section className="bg-accent/10 border-b border-accent/20">
+      <section className="bg-gradient-to-r from-gradient-pink via-gradient-purple to-gradient-blue">
         <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-center gap-2 text-center">
-          <Mail className="h-4 w-4 text-accent shrink-0" />
-          <p className="text-sm text-muted-foreground">
+          <Mail className="h-4 w-4 text-white/90 shrink-0" />
+          <p className="text-sm text-white/90">
             Send your application to{" "}
             <a
               href="mailto:recruitment@preferreddigitalbusiness.com"
-              className="font-semibold text-foreground hover:underline"
+              className="font-semibold text-white hover:underline"
             >
               recruitment@preferreddigitalbusiness.com
             </a>
