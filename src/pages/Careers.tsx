@@ -107,6 +107,51 @@ const jobListings: JobListing[] = [
       instructions: "Send your CV.",
     },
   },
+  {
+    id: 3,
+    title: "Mobile App Developer",
+    location: "Remote (Contract)",
+    type: "Contract (Min. 2 Years Exp.)",
+    department: "Engineering",
+    description:
+      "As a Mobile App Developer, you will be responsible for designing, developing, and maintaining mobile applications for Android and iOS platforms. You will collaborate with cross-functional teams to deliver scalable, user-friendly, and secure applications.",
+    responsibilities: [
+      "Develop and maintain mobile applications for Android and iOS",
+      "Write clean, scalable, and efficient code",
+      "Integrate mobile apps with backend APIs and third-party services",
+      "Implement secure payment gateway integrations where required",
+      "Troubleshoot, debug, and optimize application performance",
+      "Participate in code reviews and technical planning sessions",
+      "Ensure applications meet performance, security, and quality standards",
+    ],
+    requirements: [
+      "Minimum of 2 years' experience in mobile app development",
+      "Strong proficiency in Flutter or React Native (at least one required)",
+      "Experience integrating RESTful APIs",
+      "Experience with payment gateway integration (e.g., Paystack, Flutterwave)",
+      "Understanding of app deployment processes (Google Play Store / Apple App Store)",
+      "Familiarity with version control systems (e.g., Azure Repo, Git)",
+      "Strong problem-solving skills and attention to detail",
+      "Ability to work independently and collaboratively in a remote environment",
+    ],
+    niceToHave: [
+      "Experience with state management solutions (e.g., Provider, Bloc, Redux)",
+      "Knowledge of push notifications and real-time messaging",
+      "Familiarity with CI/CD for mobile apps",
+      "UI/UX design awareness",
+    ],
+    benefits: [
+      "Fully remote work environment",
+      "Contract position with the possibility of an extension",
+      "Opportunity to work on innovative digital products",
+      "Career growth and professional development",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Mobile App Developer Application – Preferred Digital Business Solutions",
+      instructions: "Send your CV and portfolio.",
+    },
+  },
 ];
 
 const Careers = () => {
