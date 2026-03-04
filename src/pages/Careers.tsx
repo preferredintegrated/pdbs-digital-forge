@@ -472,6 +472,9 @@ const JobCard = ({ job }: { job: JobListing }) => {
                 <p className="text-muted-foreground text-sm mb-3">
                   {job.howToApply.instructions}
                 </p>
+                <p className="text-sm text-muted-foreground mb-1">
+                  Email: <a href={`mailto:${job.howToApply.email}`} className="font-medium text-foreground hover:underline">{job.howToApply.email}</a>
+                </p>
                 <p className="text-sm text-muted-foreground mb-4">
                   Subject line: <span className="font-medium text-foreground">"{job.howToApply.subjectLine}"</span>
                 </p>
