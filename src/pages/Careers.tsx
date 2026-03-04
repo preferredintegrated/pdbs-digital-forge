@@ -285,6 +285,44 @@ const jobListings: JobListing[] = [
       instructions: "Send your CV and portfolio.",
     },
   },
+  {
+    id: 7,
+    title: "Database Intern",
+    location: "Remote",
+    type: "Internship",
+    department: "Engineering",
+    duration: "6 months",
+    description:
+      "We are seeking a detail-oriented and analytical Database Intern to support our technical team in managing, organizing, and maintaining company databases. This internship provides hands-on experience in database administration, data analysis, and data security best practices.",
+    responsibilities: [
+      "Assist in designing and maintaining databases",
+      "Support data entry, validation, and clean-up activities",
+      "Write and optimize basic SQL queries",
+      "Monitor database performance and troubleshoot minor issues",
+      "Ensure data accuracy, integrity, and security",
+      "Collaborate with developers and business teams on data requirements",
+    ],
+    requirements: [
+      "Basic knowledge of SQL (MySQL, or SQL Server)",
+      "Understanding of database concepts (tables, relationships, indexing)",
+      "Familiarity with Microsoft Excel or data analysis tools",
+      "Strong analytical and problem-solving skills",
+      "Attention to detail and ability to work independently",
+      "Currently studying or recently graduated in Computer Science, IT, or related field",
+    ],
+    benefits: [
+      "Practical experience working with live databases",
+      "Mentorship from experienced database administrators",
+      "Exposure to real business data and systems",
+      "Flexible remote work environment",
+      "Opportunity for future full-time role based on performance",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Database Intern Application",
+      instructions: "Send your CV.",
+    },
+  },
 ];
 
 const JobCard = ({ job }: { job: JobListing }) => {
