@@ -152,6 +152,49 @@ const jobListings: JobListing[] = [
       instructions: "Send your CV and portfolio.",
     },
   },
+  {
+    id: 4,
+    title: "Technical Sales Executive",
+    location: "Remote",
+    type: "Min. 2 Years Exp.",
+    department: "Sales",
+    description:
+      "The Technical Sales Executive will bridge the gap between our technical team and clients. You will identify prospects, understand client needs, present tailored technology solutions, and close deals while maintaining strong customer relationships.",
+    responsibilities: [
+      "Identify and generate new business opportunities",
+      "Present and demonstrate digital solutions to prospective clients",
+      "Understand client technical requirements and propose suitable solutions",
+      "Prepare and deliver compelling sales proposals and presentations",
+      "Collaborate with the technical team to design customized solutions",
+      "Manage the full sales cycle from lead generation to closing",
+      "Maintain long-term client relationships and ensure customer satisfaction",
+      "Meet and exceed sales targets",
+    ],
+    requirements: [
+      "Minimum of 2 years' experience in technical sales, IT sales, or B2B sales",
+      "Strong understanding of software development, web/mobile applications, or enterprise solutions",
+      "Ability to understand technical concepts (e.g., APIs, cloud services, integrations) and explain them clearly to clients",
+      "Excellent communication, negotiation, and presentation skills",
+      "Proven track record of meeting or exceeding sales targets",
+      "Self-motivated and able to work independently in a remote environment",
+    ],
+    niceToHave: [
+      "Experience selling SaaS or digital transformation solutions",
+      "Familiarity with CRM tools",
+      "Strong network within corporate or SME sectors",
+    ],
+    benefits: [
+      "Fully remote work environment",
+      "Salary plus commission on closed deals",
+      "Performance-based incentives",
+      "Opportunity to grow within a fast-expanding tech company",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Technical Sales Executive Application – Preferred Digital Business Solutions",
+      instructions: "Send your CV.",
+    },
+  },
 ];
 
 const Careers = () => {
