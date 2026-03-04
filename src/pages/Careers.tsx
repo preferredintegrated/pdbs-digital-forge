@@ -237,6 +237,52 @@ const jobListings: JobListing[] = [
       instructions: "Send your CV and a brief cover note explaining why you're interested in a Business Analyst internship.",
     },
   },
+  {
+    id: 6,
+    title: "Technical Lead",
+    location: "Remote",
+    type: "Min. 3 Years Exp.",
+    department: "Engineering",
+    description:
+      "As a Technical Lead, you will oversee the technical direction of projects, guide developers, and ensure best practices in software development. You will play a key role in system architecture, infrastructure, security, and successful product deployment.",
+    responsibilities: [
+      "Lead and mentor the development team",
+      "Design and implement scalable applications and services",
+      "Work extensively with React (frontend) and .NET (backend)",
+      "Handle and oversee secure payment gateway integrations",
+      "Ensure code quality, performance optimization, and security best practices",
+      "Collaborate with product manager, scrum master, and business stakeholders",
+      "Participate in architecture decisions and technical planning",
+      "Conduct code reviews and enforce development standards and best practices",
+    ],
+    requirements: [
+      "Minimum of 3 years' experience in a similar technical or leadership role",
+      "Strong proficiency in React.js",
+      "Strong experience with .NET / ASP.NET Core",
+      "Strong proficiency in cloud computing, storage, and networking",
+      "Experience integrating payment gateways (e.g., Paystack, Flutterwave or similar)",
+      "Solid understanding of REST APIs and microservices architecture",
+      "Experience with version control tools",
+      "Experience with Azure DevOps",
+      "Strong problem-solving and communication skills",
+      "Ability to work independently and collaboratively in a remote environment",
+    ],
+    niceToHave: [
+      "Experience with cloud platforms (Azure or AWS)",
+      "DevOps knowledge (CI/CD pipelines)",
+      "Experience with Agile/Scrum methodology",
+    ],
+    benefits: [
+      "Fully remote work environment",
+      "Opportunity to lead impactful digital projects",
+      "Career growth and leadership exposure",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Technical Lead Application – Preferred Digital Business Solutions",
+      instructions: "Send your CV and portfolio.",
+    },
+  },
 ];
 
 const Careers = () => {
