@@ -323,6 +323,44 @@ const jobListings: JobListing[] = [
       instructions: "Send your CV.",
     },
   },
+  {
+    id: 8,
+    title: "Front-End Developer Intern",
+    location: "Remote",
+    type: "Internship",
+    department: "Engineering",
+    duration: "6 months",
+    description:
+      "We are looking for a motivated and creative Front-End Developer Intern to join our team. This role is ideal for someone eager to gain hands-on experience building responsive and interactive web applications while working alongside experienced developers.",
+    responsibilities: [
+      "Assist in developing and maintaining web applications",
+      "Translate UI/UX design wireframes into functional code",
+      "Build responsive and mobile-friendly interfaces",
+      "Collaborate with back-end developers and designers",
+      "Debug and troubleshoot front-end issues",
+      "Participate in code reviews and team meetings",
+    ],
+    requirements: [
+      "Basic understanding of HTML, CSS, and JavaScript",
+      "Familiarity with React.js is an added advantage",
+      "Understanding of responsive design principles",
+      "Knowledge of Git/version control is a plus",
+      "Strong problem-solving skills and attention to detail",
+      "Willingness to learn and grow in a fast-paced environment",
+    ],
+    benefits: [
+      "Hands-on industry experience",
+      "Mentorship from senior developers",
+      "Opportunity to work on real-life projects",
+      "Flexible remote work environment",
+      "Potential for full-time employment based on performance",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Front-End Developer Intern Application",
+      instructions: "Send your CV and portfolio.",
+    },
+  },
 ];
 
 const JobCard = ({ job }: { job: JobListing }) => {
