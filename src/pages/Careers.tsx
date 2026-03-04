@@ -15,6 +15,7 @@ interface JobListing {
   description: string;
   responsibilities: string[];
   requirements: string[];
+  niceToHave?: string[];
   benefits?: string[];
   howToApply?: {
     email: string;
@@ -61,6 +62,49 @@ const jobListings: JobListing[] = [
       subjectLine: "Application – Software Tester/QA Intern",
       instructions:
         "Send your CV and a brief note on why you're interested in this internship.",
+    },
+  },
+  {
+    id: 2,
+    title: "Junior Business Operations Coordinator",
+    location: "Remote",
+    type: "Entry-Level (1–2 Years)",
+    department: "Business Operations",
+    description:
+      "The Junior Business Operations Coordinator will assist in managing internal processes, supporting project coordination, tracking performance metrics, and ensuring operational efficiency across departments.",
+    responsibilities: [
+      "Support day-to-day business operations and administrative processes",
+      "Coordinate between technical, sales, and management teams",
+      "Track project timelines and ensure deliverables are met",
+      "Maintain operational records and documentation",
+      "Prepare reports, presentations, and performance summaries",
+      "Assist in process improvement initiatives",
+      "Support client onboarding and internal workflow management",
+    ],
+    requirements: [
+      "1–2 years' experience in business operations, administration, or coordination roles",
+      "Strong organizational and multitasking skills",
+      "Excellent written and verbal communication skills",
+      "Proficiency in Microsoft Office or Google Workspace",
+      "Basic understanding of business processes and project coordination",
+      "Ability to work independently in a remote environment",
+      "Strong attention to detail and problem-solving ability",
+    ],
+    niceToHave: [
+      "Experience working in a tech or digital company",
+      "Familiarity with project management tools (e.g., Trello, Asana, Jira)",
+      "Basic knowledge of business analytics or reporting",
+    ],
+    benefits: [
+      "Fully remote work environment",
+      "Competitive salary",
+      "Growth opportunities within the company",
+      "Exposure to cross-functional business operations",
+    ],
+    howToApply: {
+      email: "recruitment@preferreddigitalbusiness.com",
+      subjectLine: "Junior Business Operations Coordinator Application – Preferred Digital Business Solutions",
+      instructions: "Send your CV.",
     },
   },
 ];
@@ -162,6 +206,23 @@ const Careers = () => {
                       ))}
                     </ul>
                   </div>
+
+                  {/* Nice to Have */}
+                  {job.niceToHave && (
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <Star className="h-4 w-4 text-accent" /> Nice to Have
+                      </h4>
+                      <ul className="space-y-2 text-muted-foreground text-sm">
+                        {job.niceToHave.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-purple shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
 
                   {/* Benefits */}
                   {job.benefits && (
