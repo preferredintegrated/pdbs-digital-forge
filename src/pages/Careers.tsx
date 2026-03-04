@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import backgroundTexture from "@/assets/background-texture.png";
-import careersBanner from "@/assets/careers-banner.jpg";
+
 
 interface JobListing {
   id: number;
@@ -541,14 +541,6 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Banner */}
-      <section className="w-full">
-        <img
-          src={careersBanner}
-          alt="Build Fully Integrated Software Solutions For Your Business - Preferred Digital Business Solutions"
-          className="w-full h-auto object-cover"
-        />
-      </section>
 
       {/* Filters */}
       <section className="pt-12 pb-4">
