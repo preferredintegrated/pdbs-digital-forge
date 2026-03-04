@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import backgroundTexture from "@/assets/background-texture.png";
 
@@ -9,12 +10,15 @@ const menuItems = [
   { label: "Services", href: "#services" },
   { label: "Industries", href: "#industries" },
   { label: "About", href: "#about" },
+  { label: "Careers", href: "/careers", isRoute: true },
   { label: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,10 +29,21 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (item: (typeof menuItems)[number]) => {
+    if ("isRoute" in item && item.isRoute) {
+      navigate(item.href);
+      setIsMobileMenuOpen(false);
+    } else {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const element = document.querySelector(item.href);
+          if (element) element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      } else {
+        const element = document.querySelector(item.href);
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+      }
       setIsMobileMenuOpen(false);
     }
   };
@@ -46,19 +61,17 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <a
             href="#home"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection("#home");
+              handleNavClick({ label: "Home", href: "#home" });
             }}
             className="flex items-center"
           >
             <img src={logo} alt="PDBS Logo" className="h-12 w-auto" />
           </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
               <a
@@ -66,22 +79,21 @@ const Header = () => {
                 href={item.href}
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection(item.href);
+                  handleNavClick(item);
                 }}
-                className={`font-medium transition-colors hover:text-gradient-pink text-white`}
+                className="font-medium transition-colors hover:text-gradient-pink text-white"
               >
                 {item.label}
               </a>
             ))}
             <Button
               className="bg-gradient-to-r from-gradient-pink via-gradient-purple to-gradient-blue text-white hover:opacity-90"
-              onClick={() => scrollToSection("#contact")}
+              onClick={() => handleNavClick({ label: "Contact", href: "#contact" })}
             >
               Get Started
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,9 +106,8 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div 
+          <div
             className="md:hidden py-4 border-t border-white/10"
             style={{
               backgroundImage: `url(${backgroundTexture})`,
@@ -111,7 +122,7 @@ const Header = () => {
                   href={item.href}
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection(item.href);
+                    handleNavClick(item);
                   }}
                   className="font-medium text-white hover:text-gradient-pink transition-colors px-2 py-2"
                 >
@@ -120,7 +131,7 @@ const Header = () => {
               ))}
               <Button
                 className="bg-gradient-to-r from-gradient-pink via-gradient-purple to-gradient-blue text-white hover:opacity-90 w-full"
-                onClick={() => scrollToSection("#contact")}
+                onClick={() => handleNavClick({ label: "Contact", href: "#contact" })}
               >
                 Get Started
               </Button>
