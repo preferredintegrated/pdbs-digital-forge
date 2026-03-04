@@ -2,7 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { MapPin, Clock, Briefcase, ArrowLeft, Mail, GraduationCap, CheckCircle2, Star, ChevronDown } from "lucide-react";
+import { MapPin, Clock, Briefcase, ArrowLeft, Mail, GraduationCap, CheckCircle2, Star, ChevronDown, Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import backgroundTexture from "@/assets/background-texture.png";
@@ -491,8 +492,24 @@ const JobCard = ({ job }: { job: JobListing }) => {
   );
 };
 
+const departments = Array.from(new Set(jobListings.map((j) => j.department)));
+const types = Array.from(new Set(jobListings.map((j) => j.type)));
+
 const Careers = () => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedDepartment, setSelectedDepartment] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
+
+  const filteredJobs = jobListings.filter((job) => {
+    const matchesSearch =
+      !searchQuery ||
+      job.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      job.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesDept = !selectedDepartment || job.department === selectedDepartment;
+    const matchesType = !selectedType || job.type === selectedType;
+    return matchesSearch && matchesDept && matchesType;
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -533,13 +550,70 @@ const Careers = () => {
         />
       </section>
 
+      {/* Filters */}
+      <section className="pt-12 pb-4">
+        <div className="container mx-auto px-4 max-w-4xl space-y-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search positions..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10"
+            />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              size="sm"
+              variant={!selectedDepartment ? "default" : "outline"}
+              onClick={() => setSelectedDepartment(null)}
+            >
+              All Departments
+            </Button>
+            {departments.map((dept) => (
+              <Button
+                key={dept}
+                size="sm"
+                variant={selectedDepartment === dept ? "default" : "outline"}
+                onClick={() => setSelectedDepartment(selectedDepartment === dept ? null : dept)}
+              >
+                {dept}
+              </Button>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              size="sm"
+              variant={!selectedType ? "default" : "outline"}
+              onClick={() => setSelectedType(null)}
+            >
+              All Types
+            </Button>
+            {types.map((type) => (
+              <Button
+                key={type}
+                size="sm"
+                variant={selectedType === type ? "default" : "outline"}
+                onClick={() => setSelectedType(selectedType === type ? null : type)}
+              >
+                {type}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Job Listings */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="grid gap-6 max-w-4xl mx-auto">
-            {jobListings.map((job) => (
-              <JobCard key={job.id} job={job} />
-            ))}
+            {filteredJobs.length > 0 ? (
+              filteredJobs.map((job) => <JobCard key={job.id} job={job} />)
+            ) : (
+              <p className="text-center text-muted-foreground py-12">
+                No positions match your filters. Try adjusting your search.
+              </p>
+            )}
           </div>
         </div>
       </section>
