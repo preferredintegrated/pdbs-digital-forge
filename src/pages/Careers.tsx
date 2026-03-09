@@ -42,7 +42,7 @@ const jobListings: JobListing[] = [
   {
     id: 1,
     title: "Software Tester / QA Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Quality Assurance",
     duration: "3 – 6 months",
@@ -80,7 +80,7 @@ const jobListings: JobListing[] = [
   {
     id: 2,
     title: "Junior Business Operations Coordinator",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Entry-Level (1–2 Years)",
     department: "Business Operations",
     description:
@@ -123,7 +123,7 @@ const jobListings: JobListing[] = [
   {
     id: 3,
     title: "Mobile App Developer",
-    location: "Remote (Contract)",
+    location: "Remote (Contract) - Lagos, Nigeria",
     type: "Contract (Min. 2 Years Exp.)",
     department: "Engineering",
     description:
@@ -168,7 +168,7 @@ const jobListings: JobListing[] = [
   {
     id: 4,
     title: "Technical Sales Executive",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Min. 2 Years Exp.",
     department: "Sales",
     description:
@@ -211,7 +211,7 @@ const jobListings: JobListing[] = [
   {
     id: 5,
     title: "Business Analyst Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Business Analysis",
     duration: "3 – 6 months",
@@ -254,7 +254,7 @@ const jobListings: JobListing[] = [
   {
     id: 6,
     title: "Technical Lead",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Min. 3 Years Exp.",
     department: "Engineering",
     description:
@@ -300,7 +300,7 @@ const jobListings: JobListing[] = [
   {
     id: 7,
     title: "Database Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Engineering",
     duration: "6 months",
@@ -338,7 +338,7 @@ const jobListings: JobListing[] = [
   {
     id: 8,
     title: "Front-End Developer Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Engineering",
     duration: "6 months",
