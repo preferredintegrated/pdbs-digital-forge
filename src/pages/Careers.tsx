@@ -338,7 +338,7 @@ const jobListings: JobListing[] = [
   {
     id: 8,
     title: "Front-End Developer Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Engineering",
     duration: "6 months",
