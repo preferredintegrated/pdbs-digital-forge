@@ -254,7 +254,7 @@ const jobListings: JobListing[] = [
   {
     id: 6,
     title: "Technical Lead",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Min. 3 Years Exp.",
     department: "Engineering",
     description:
