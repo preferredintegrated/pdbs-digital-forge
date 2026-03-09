@@ -42,7 +42,7 @@ const jobListings: JobListing[] = [
   {
     id: 1,
     title: "Software Tester / QA Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Quality Assurance",
     duration: "3 – 6 months",
