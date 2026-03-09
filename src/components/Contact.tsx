@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Location</h3>
-                  <p className="text-white/80">Gbagada, Lagos, Nigeria</p>
+                  <p className="text-white/80">Remote - Lagos, Nigeria</p>
                 </div>
               </div>
 
