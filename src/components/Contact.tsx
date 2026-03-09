@@ -81,45 +81,6 @@ const Contact = () => {
             </Button>
           </div>
 
-          <div className="border-t border-white/20 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-              <div>
-                <p className="text-white/80 text-sm mb-2">Follow us on social media</p>
-                <div className="flex gap-4">
-                  <a
-                    href="https://instagram.com/PDBSglobal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                  >
-                    <Instagram className="h-5 w-5 text-white" />
-                  </a>
-                  <a
-                    href="https://twitter.com/PDBSglobal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                  >
-                    <Twitter className="h-5 w-5 text-white" />
-                  </a>
-                  <a
-                    href="https://linkedin.com/company/PDBSglobal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                  >
-                    <Linkedin className="h-5 w-5 text-white" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="text-center md:text-right">
-                <p className="text-white/80 text-sm">
-                  © 2025 Preferred Digital Business Solutions
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
