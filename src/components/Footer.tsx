@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import { Mail, Phone, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import backgroundTexture from "@/assets/background-texture.png";
@@ -113,10 +113,6 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-primary-foreground/70">
                 <Phone className="h-4 w-4 mt-0.5 shrink-0 text-primary-foreground/50" />
                 <span>+234 901 086 9914</span>
-              </li>
-              <li className="flex items-start gap-3 text-primary-foreground/70">
-                <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary-foreground/50" />
-                <span>Remote — South Africa</span>
               </li>
             </ul>
           </div>
