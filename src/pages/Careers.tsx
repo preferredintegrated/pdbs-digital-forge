@@ -300,7 +300,7 @@ const jobListings: JobListing[] = [
   {
     id: 7,
     title: "Database Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Engineering",
     duration: "6 months",
