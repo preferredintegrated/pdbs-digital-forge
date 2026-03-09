@@ -115,7 +115,7 @@ const Contact = () => {
 
               <div className="text-center md:text-right">
                 <p className="text-white/80 text-sm">
-                  © 2025 Preferred Digital Business Services
+                  © 2025 Preferred Digital Business Solutions
                 </p>
               </div>
             </div>
