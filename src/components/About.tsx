@@ -11,7 +11,7 @@ const About = () => {
               About PDBS
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Preferred Digital Business Services is a strategic technology partner
+              Preferred Digital Business Solutions is a strategic technology partner
               that provides custom software development, system integration, and
               digital solutions to enterprises, startups, and software vendors
               worldwide.
