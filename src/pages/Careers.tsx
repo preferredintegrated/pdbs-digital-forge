@@ -80,7 +80,7 @@ const jobListings: JobListing[] = [
   {
     id: 2,
     title: "Junior Business Operations Coordinator",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Entry-Level (1–2 Years)",
     department: "Business Operations",
     description:
