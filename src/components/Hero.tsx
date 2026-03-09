@@ -17,7 +17,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
               Preferred Digital
               <br />
-              Business Services
+              Business Solutions
             </h1>
             <p className="text-2xl md:text-3xl text-foreground/90 font-medium mb-4">
               Your Integration Partner
