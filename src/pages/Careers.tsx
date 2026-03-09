@@ -123,7 +123,7 @@ const jobListings: JobListing[] = [
   {
     id: 3,
     title: "Mobile App Developer",
-    location: "Remote (Contract)",
+    location: "Remote (Contract) - Lagos, Nigeria",
     type: "Contract (Min. 2 Years Exp.)",
     department: "Engineering",
     description:
