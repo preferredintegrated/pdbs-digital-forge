@@ -211,7 +211,7 @@ const jobListings: JobListing[] = [
   {
     id: 5,
     title: "Business Analyst Intern",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Internship",
     department: "Business Analysis",
     duration: "3 – 6 months",
