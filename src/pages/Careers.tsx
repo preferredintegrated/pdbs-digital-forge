@@ -168,7 +168,7 @@ const jobListings: JobListing[] = [
   {
     id: 4,
     title: "Technical Sales Executive",
-    location: "Remote",
+    location: "Remote - Lagos, Nigeria",
     type: "Min. 2 Years Exp.",
     department: "Sales",
     description:
